@@ -1,7 +1,8 @@
 {
   "env": {
     "browser": true,
-    "es6": true
+    "es6": true,
+    "jest": true
   },
   "extends": [
     "eslint:recommended",
@@ -20,7 +21,7 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": ["react", "react-hooks", "@typescript-eslint"],
+  "plugins": ["html", "react", "react-hooks", "@typescript-eslint", "prettier"],
   "rules": {
     "prettier/prettier": "error",
     "react-hooks/rules-of-hooks": "error",
@@ -29,6 +30,8 @@
     "no-console": "off",
     "react/prop-types": "warn",
     "no-unused-vars": "error",
-    "indent": "off"
+    "indent": "off",
+    "no-await-in-loop": "warn",
+    "no-unused-expressions": "warn"
   }
 }
