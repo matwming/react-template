@@ -19,5 +19,5 @@ npm start
 * To make a network request, just
 
 ```
-import {instance} from "./config/config"
+import axios from "./config/config" 
 ```
