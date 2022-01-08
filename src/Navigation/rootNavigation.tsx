@@ -1,15 +1,17 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
-import Home from "../Pages/Home";
-import About from "../Pages/About";
+import { Route,Routes } from "react-router-dom";
+import Home from "../Features/Root/Home";
+import About from "../Features/About/About";
+import Login from '../Features/Login/Login';
+
+import { RequireAuth } from '../Features/Auth/Auth';
 const RootNavigation: React.FC = () => {
   return (
-    <>
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/about" component={About} />
-      </Switch>
-    </>
+    <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/about" element={<RequireAuth><About/></RequireAuth>} />
+        <Route path="/login" element={<Login/>}/>
+    </Routes>
   );
 };
 

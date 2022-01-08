@@ -4,7 +4,7 @@ import { todosReducer } from "./reducer/todoReducer/todoReducer";
 
 /**
 |--------------------------------------------------
-| config rootReducer
+| Config rootReducer
 |--------------------------------------------------
 */
 const rootReducer = combineReducers({
@@ -13,7 +13,7 @@ const rootReducer = combineReducers({
 
 /**
 |--------------------------------------------------
-| 自定义了一个logger middle 开始
+| logger middleware
 |--------------------------------------------------
 */
 const logger = store => next => action => {

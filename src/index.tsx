@@ -5,15 +5,18 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import configStore from "./store/configStore";
 import { Provider } from "react-redux";
-import { BrowserRouter } from "react-router-dom";
+import { AuthProvider } from './Features/Auth/Auth';
+import { BrowserRouter } from 'react-router-dom';
 const store = configStore();
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Provider store={store}>
-      <App />
-    </Provider>
-  </BrowserRouter>,
+  <AuthProvider>
+    <BrowserRouter>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </BrowserRouter>
+  </AuthProvider>,
   document.getElementById("root")
 );
 

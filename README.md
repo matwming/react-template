@@ -1,9 +1,8 @@
 ## <u>Introduction</u>
 
-#### <u>eslint and prettier</u>
+#### <u>Folder Structure</u>
 
-- In order to use this template properly please install eslint and prettier in vscode
-- In this project, eslint focuses on code quality not code format and prettier focuses on code format. Change your preferred settings in .prettierrc file
+* The app is organized by features (inspired by angular feature modules)
 
 * This app is created by create-react-app and pre-configured with typescript,axios, react-router,redux (thunk), and styled-components; You just need to focus on your business logic. No more time wasted on configuring your create-react-app;
 

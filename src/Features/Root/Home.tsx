@@ -1,5 +1,6 @@
 import React from "react";
-import { Button } from "../UI/Basic/basicStyle";
+import { Button } from "../../UI/Basic/basicStyle";
+
 const Home: React.FC = () => {
   return (
     <>
